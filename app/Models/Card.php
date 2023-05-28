@@ -7,5 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Card extends Model
 {
-    use HasFactory;
+    protected $primaryKey = "card";
+    protected $fillable = ["card", "card_name", "img_name", "main_meaning_dir", "main_meaning_rev", "describe", "meaning_dir", "meaning_rev"];
 }

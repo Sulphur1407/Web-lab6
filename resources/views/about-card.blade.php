@@ -31,29 +31,29 @@
                 <div class="text">
                     <h1>Значення карти:</h1>
                     <b>Основні значення (прямі):</b>
-                    <p>{{ $main_meaning_dir }}</p>
+                    <p>{{ $card["main_meaning_dir"] }}</p>
                     <b>Основні значення (перевернуті):</b>
-                    <p>{{ $main_meaning_rev }}</p>
+                    <p>{{ $card["main_meaning_rev"] }}</p>
                 </div>
                 <div class="card">
-                    <h1>{{$card_name}}</h1>
-                    <img src="{{ asset('/storage/images/карти таро/' . $img_name) }}" alt="">
+                    <h1>{{$card["card_name"]}}</h1>
+                    <img src="{{ asset('/storage/images/карти таро/' . $card['img_name']) }}" alt="">
                 </div>
             </div>
 
             <div class="block-2">
-                <h1>Опис карти таро {{$card_name}}</h1>
-                <p>{{ $describe }}</p>
+                <h1>Опис карти таро {{$card["card_name"]}}</h1>
+                <p>{{ $card["describe"] }}</p>
             </div>
 
             <div class="block-3">
                 <div class="box1">
-                    <h2>Значення карти {{$card_name}} у прямому положенні</h2>
-                    <p>{{ $meaning_dir }}</p>
+                    <h2>Значення карти {{$card["card_name"]}} у прямому положенні</h2>
+                    <p>{{ $card["meaning_dir"] }}</p>
                 </div>
                 <div class="box2">
-                    <h2>Значення карти {{$card_name}} у перевернутому положенні</h2>
-                    <p>{{ $meaning_rev }}</p>
+                    <h2>Значення карти {{$card["card_name"]}} у перевернутому положенні</h2>
+                    <p>{{ $card["meaning_rev"] }}</p>
                 </div>
             </div>
         </div>

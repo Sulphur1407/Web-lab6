@@ -20,8 +20,12 @@ Route::get('/', function () {
 });
 
 Route::get("all-cards/{cardName}", [AllCardsController::class, "show"]);
+Route::get("/about-deck", function () {
+    return view("about-deck");
+});
 
-Route::get('/test', [Test::class, "show"]);
+Route::get('/test/doctor/{id}', [Test::class, "show_doctor"]);
+Route::get('/test/patient/{id}', [Test::class, "show_patient"]);
 
 
 
