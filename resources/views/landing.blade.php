@@ -32,9 +32,9 @@
                     <h1>Карти таро</h1>
                     <p>Завжди цікавило, що приховує майбутнє? Хочете знати, що чекає вас завтра, чи які перешкоди та можливості зустрінуться на вашому шляху? Гадання на картах Таро - це відповідь на ваші запитання.</p>
                     <div class="small-button">
-                        <div class="small-button-box">
+                        <a href="{{ url('/diviation') }}" class="small-button-box">
                             <p class="small-button-text">Задати питання</p>
-                        </div>
+                        </a>
                     </div>
                 </div>
                 <div class="img1-landing"><img src="/storage/images/landing1.png" alt=""></div>    
@@ -49,23 +49,29 @@
                             <h2>Трактування колоди Райдера-Уейта</h2>
                         </div>
                     </a>
-                    <div class="bl2-bl2">
-                        <img src="/storage/images/landing3.png" alt="">
-                        <h2>Читання вашого розкладу</h2>
-                    </div>
-                    <div class="bl2-bl4">
-                        <img src="/storage/images/landing4.png" alt="">
-                        <h2>Швидкий розклад онлайн</h2>
-                    </div>
+
+                    <a href="{{ url('/interpretation') }}">
+                        <div class="bl2-bl2">
+                            <img src="/storage/images/landing3.png" alt="">
+                            <h2>Читання вашого розкладу</h2>
+                            </div>
+                    </a>
+
+                    <a href="{{ url('/diviation') }}">
+                        <div class="bl2-bl4">
+                            <img src="/storage/images/landing4.png" alt="">
+                            <h2>Швидкий розклад онлайн</h2>
+                        </div>
+                    </a>
                 </div>
             </div>
 
             <div class="block-3">
                 <h1>Вперше чуєте?:</h1>
                 <p>Таро Райдера-Уейта - це система пророцтва, яка використовує набір з 78 карт. Колода поділяється на дві групи: 22 Великі та 56 Малих Аркан. Кожна карта має власне символічне зображення та тлумачення, які можуть бути використані для передбачення майбутніх подій, або для отримання порад та допомоги при вирішенні проблем.</p>
-                <div class="big-button">
+                <a href="{{ url('/about-deck') }}" class="big-button">
                     <p>Дізнатись більше</p>
-                </div>
+                </a>
             </div>
             
             
